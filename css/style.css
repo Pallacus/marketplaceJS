@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+}
