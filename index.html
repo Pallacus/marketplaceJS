@@ -32,21 +32,21 @@
                         </ul>
                         <button type="button" class="btn btn-warning position-relative mx-lg-4 my-3 my-md-3 ">
                             Carrito
-                            <span
+                            <spanm id="contadorCarrito"
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                 0
-                            </span>
+                                </span>
                         </button>
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar producto"
-                                aria-label="Search">
-                            <button class="btn btn-outline-warning" type="submit">Buscar</button>
+                            <input id="searchByName" class="form-control me-2" type="search"
+                                placeholder="Buscar producto" aria-label="Search">
+                            <button id="serachButton" class="btn btn-outline-warning" type="submit">Buscar</button>
                         </form>
                     </div>
                 </div>
             </nav>
         </header>
-        <main>
+        <main class="mb-5">
             <section class="container mt-3">
                 <h1>Bienvenido a marketPlaceJS</h1>
                 <hr>
@@ -61,14 +61,15 @@
                     <hr class="d-md-none">
                     <div class="col-12 col-md-6">
                         <form id="formprice" class="d-md-flex">
-                            <input type="number" class="form-control" placeholder="min">
-                            <input type="number" class="form-control my-2 my-md-0 mx-md-2" placeholder="max">
+                            <input type="number" class="form-control" placeholder="precio mínimo" min="0" name="min">
+                            <input type="number" class="form-control my-2 my-md-0 mx-md-2" placeholder="precio máximo"
+                                min="0" name="max">
                             <input class="btn btn-warning" type="submit" value="filtrar">
                         </form>
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <article class="col-12 col-md-6 col-lg-3">
+                <div id="products" class="row mt-3 g-3">
+                    <!-- <article class="col-12 col-md-6 col-lg-3">
                         <div class="card shadow ">
                             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.o7wyrY8-HNexGK3b2l1sPQHaGM%26pid%3DApi&f=1&ipt=b15e06adbc47fe9e5005744a6dcbe9913b8586b2f654961f151f08d353529d16&ipo=images"
                                 class="card-img-top" alt="...">
@@ -79,7 +80,7 @@
                                 <button class="btn btn-outline-warning">Añadir al carrito</button>
                             </div>
                         </div>
-                    </article>
+                    </article> -->
                 </div>
             </section>
         </main>
@@ -89,6 +90,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>
