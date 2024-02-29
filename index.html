@@ -47,9 +47,41 @@
             </nav>
         </header>
         <main>
-
-
-
+            <section class="container mt-3">
+                <h1>Bienvenido a marketPlaceJS</h1>
+                <hr>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <select id="selectcategory" class="form-select">
+                            <option value="">Selecciona un categoria</option>
+                            <option value="">Categoria 1</option>
+                            <option value="">Categoria 2</option>
+                        </select>
+                    </div>
+                    <hr class="d-md-none">
+                    <div class="col-12 col-md-6">
+                        <form id="formprice" class="d-md-flex">
+                            <input type="number" class="form-control" placeholder="min">
+                            <input type="number" class="form-control my-2 my-md-0 mx-md-2" placeholder="max">
+                            <input class="btn btn-warning" type="submit" value="filtrar">
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <article class="col-12 col-md-6 col-lg-3">
+                        <div class="card shadow ">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.o7wyrY8-HNexGK3b2l1sPQHaGM%26pid%3DApi&f=1&ipt=b15e06adbc47fe9e5005744a6dcbe9913b8586b2f654961f151f08d353529d16&ipo=images"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ratón gaming</h5>
+                                <p class="card-text">Precio: 34€</p>
+                                <a href="#" class="btn btn-warning">Ver detalle</a>
+                                <button class="btn btn-outline-warning">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </main>
         <footer class="bg-dark text-white p-3 fixed-bottom border-4 border-top border-warning">
             <p>Copyright@20s24</p>
