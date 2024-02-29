@@ -6,6 +6,9 @@ GET https://062d-77-225-253-65.ngrok-free.app/products
 - obtener un producto por id
 GET    https://062d-77-225-253-65.ngrok-free.app/products/24567dwrew
 
+- obtener un producto por nombre
+GET https://062d-77-225-253-65.ngrok-free.app/products/search/raton
+
 - guardar un producto, tenemos que recoger le informacion en un form, nombre,  precio, foto, categoria: string, stock: number
 POST https://062d-77-225-253-65.ngrok-free.app/products
 
